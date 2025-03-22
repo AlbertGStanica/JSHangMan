@@ -2,6 +2,8 @@ let wordObj;
 
 window.onload = function () {
     loadData();
+    let letterContain = document.querySelector(".letterContain");
+    letterContain.addEventListener("click", checkLetter);
 }
 
 function loadData() {
@@ -12,11 +14,22 @@ function loadData() {
         // code 200 means the server succeeded in retrieving the resource
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
             // console.log(xhr.response);
-            wordObj = JSON.parse(xhr.responseText); //contents of json file
-            console.log(wordObj);
+            wordObj = JSON.parse(xhr.responseText); //contents of json file 
         }
     };
     xhr.open("GET", url, true); // must use “GET” method :step3
     xhr.send(); // this actually sends the request to the server :step 4
 }
 
+function checkLetter(evt) {
+    let click = evt.target;
+
+    if (click.classList.contains("letter")) {
+
+    }
+}
+
+function gameOnLoad() {
+
+    newGame();
+}

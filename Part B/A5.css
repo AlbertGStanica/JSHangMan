@@ -13,17 +13,14 @@
 
 .letterContain {
     border: thin solid;
+    display: grid;
+    place-items: center;
 }
 
 .letter {
     padding: 10px;
     text-align: center;
     font-family: monospace;
-}
-
-table {
-    display: grid;
-    place-items: center;
 }
 
 table,
