@@ -1,0 +1,33 @@
+.mainContain {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.hangmanContain {
+    border: thin solid;
+}
+
+.recordContain {
+    border: thin solid;
+}
+
+.letterContain {
+    border: thin solid;
+}
+
+.letter {
+    padding: 10px;
+    text-align: center;
+    font-family: monospace;
+}
+
+table {
+    display: grid;
+    place-items: center;
+}
+
+table,
+td {
+    border: thin solid;
+    border-collapse: collapse;
+}
