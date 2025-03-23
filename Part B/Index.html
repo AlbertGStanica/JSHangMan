@@ -5,19 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="A5.js"></script>
     <script src="GameController.js"></script>
+    <script src="A5.js"></script>
     <link rel="stylesheet" href="A5.css">
 </head>
 
 <body>
     <div class="mainContain">
-        <div class="hangmanContain">I am hangmanContain</div>
+        <div class="hangmanContain">I am hangmanContain
+            <div class="hangmanPicture"></div>
+            <div class="mysteryWord"></div>
+        </div>
         <div class="recordContain">
-            <button type="button">New Game</button>
+            <button type="button" id="startNew">New Game</button>
+            <div class="dropDownContain show">
+                <div>Select a category:</div>
+                <div class="menuOptions">
+                    <input type="radio" name="category" value="countries">
+                    <label for="countries">Countries</label>
+                </div>
+                <div class="menuOptions">
+                    <input type="radio" name="category" value="flowers">
+                    <label for="flowers">Flowers</label>
+                </div>
+                <div class="menuOptions">
+                    <input type="radio" name="category" value="legal">
+                    <label for="legal">Legal</label>
+                </div>
+                <div class="menuOptions">
+                    <input type="radio" name="category" value="temporal">
+                    <label for="temporal">Time-Related</label>
+                </div>
+                <button type="button" id="begin">Begin Game</button>
+            </div>
         </div>
     </div>
-    <table class="letterContain">
+    <table id="letterContain">
         <tbody>
             <tr>
                 <td class="letter" id="A">A</td>

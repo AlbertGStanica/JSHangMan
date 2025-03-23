@@ -11,7 +11,7 @@
     border: thin solid;
 }
 
-.letterContain {
+#letterContain {
     border: thin solid;
     display: grid;
     place-items: center;
@@ -27,4 +27,17 @@ table,
 td {
     border: thin solid;
     border-collapse: collapse;
+}
+
+.dropDownContain {
+    border: thin solid;
+    padding: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }
