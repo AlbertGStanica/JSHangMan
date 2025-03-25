@@ -1,43 +1,60 @@
 .mainContain {
-    display: grid;
-    grid-template-columns: 50% 50%;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .hangmanContain {
-    border: thin solid;
+  border: thin solid;
 }
 
 .recordContain {
-    border: thin solid;
+  border: thin solid;
 }
 
 #letterContain {
-    border: thin solid;
-    display: grid;
-    place-items: center;
+  border: thin solid;
+  display: grid;
+  place-items: center;
 }
 
 .letter {
-    padding: 10px;
-    text-align: center;
-    font-family: monospace;
+  padding: 10px;
+  text-align: center;
+  font-family: monospace;
 }
 
 table,
 td {
-    border: thin solid;
-    border-collapse: collapse;
+  border: thin solid;
+  border-collapse: collapse;
 }
 
 .dropDownContain {
-    border: thin solid;
-    padding: 5px;
+  border: thin solid;
+  padding: 5px;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .show {
-    display: block;
+  display: block;
+}
+
+.mysteryWord {
+  display: flex;
+}
+
+.blank {
+  width: 40px;
+  height: 40px;
+  background: grey;
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #444;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
