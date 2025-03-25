@@ -22,7 +22,7 @@
         </div>
         <div class="recordContain">
             <button type="button" id="startNew">New Game</button>
-            <div class="dropDownContain show">
+            <div class="dropDownContain hide">
                 <div>Select a category:</div>
                 <div class="menuOptions">
                     <input type="radio" name="category" value="countries">
@@ -38,10 +38,13 @@
                 </div>
                 <div class="menuOptions">
                     <input type="radio" name="category" value="temporal">
-                    <label for="temporal">Time-Related</label>
+                    <label for="temporal">Temporal</label>
                 </div>
                 <button type="button" id="begin">Begin Game</button>
             </div>
+            <div class="displayCategory hide">I am category</div>
+            <div class="displayGuesses hide">I am guesses</div>
+            <div class="displayOutcome hide">I am outcome</div>
         </div>
     </div>
     <table id="letterContain">

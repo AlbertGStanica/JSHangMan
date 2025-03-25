@@ -17,7 +17,9 @@
   place-items: center;
 }
 
-.letter {
+.letter {}
+
+td {
   padding: 10px;
   text-align: center;
   font-family: monospace;
@@ -57,4 +59,20 @@ td {
   align-items: center;
   border: 2px solid #444;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.displayCategory {
+  padding: 20px;
+}
+
+.displayGuesses {
+  padding: 20px;
+}
+
+.displayOutcome {
+  padding: 20px;
+}
+
+.disabled {
+  background-color: grey;
 }
