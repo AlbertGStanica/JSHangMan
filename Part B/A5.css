@@ -25,6 +25,10 @@
   margin-right: auto;
 }
 
+.letter:hover {
+  cursor: pointer;
+}
+
 .letter {
   background-color: gainsboro;
 }
