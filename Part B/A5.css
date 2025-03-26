@@ -4,31 +4,39 @@
 }
 
 .hangmanContain {
-  border: thin solid;
+
+  /* border: thin solid; */
 }
 
 .recordContain {
-  border: thin solid;
+  /* border: thin solid; */
 }
 
 #letterContain {
-  border: thin solid;
+  /* border: thin solid; */
   display: grid;
   place-items: center;
+  margin: 50px;
 }
 
-.letter {}
-
-td {
-  padding: 10px;
-  text-align: center;
-  font-family: monospace;
+.hangmanPicture img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-table,
+.letter {
+  background-color: gainsboro;
+}
+
 td {
   border: thin solid;
   border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: x-large;
 }
 
 .dropDownContain {
@@ -46,33 +54,41 @@ td {
 
 .mysteryWord {
   display: flex;
+  justify-content: center;
 }
 
 .blank {
-  width: 40px;
-  height: 40px;
-  background: grey;
+  width: 60px;
+  height: 60px;
+  background: gainsboro;
   color: black;
   font-size: 50px;
   font-weight: bold;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   border: 2px solid #444;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 2px;
 }
 
 .displayCategory {
-  padding: 20px;
+  margin-top: 75px;
+  font-size: x-large;
+  font-weight: bolder;
 }
 
 .displayGuesses {
-  padding: 20px;
+  margin-top: 75px;
+  font-size: x-large;
+  font-weight: bolder;
 }
 
 .displayOutcome {
-  padding: 20px;
+  margin-top: 75px;
+  font-size: x-large;
+  font-weight: bolder;
+  color: crimson;
 }
 
 .disabled {
-  background-color: grey;
+  background-color: darkgray;
 }

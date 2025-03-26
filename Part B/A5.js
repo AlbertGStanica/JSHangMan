@@ -22,6 +22,7 @@ function LoadData() {
       // console.log(xhr.response);
       wordObj = JSON.parse(xhr.responseText); //contents of json file
       DisableAllLetters();
+      BaseImage();
     }
   };
   xhr.open("GET", url, true); // must use “GET” method :step3
@@ -176,6 +177,13 @@ function GetImage(guessNumber) {
   let image =
     `<img src="imgs/HangMan` + count + `.png" alt="HangmanImage` + count + `">`;
   return image;
+}
+
+function BaseImage() {
+  let target = document.querySelector(".hangmanPicture");
+  let image = `<img src="imgs/HangMan0.png" alt="HangmanImage">`;
+
+  target.innerHTML = image;
 }
 
 function StartGame() {
